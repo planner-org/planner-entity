@@ -12,7 +12,7 @@ import java.util.Objects;
 import java.util.Set;
 
 @Entity
-@Table(name = "role_data", schema = "todolist", catalog = "todolist")
+@Table(name = "role_data", schema = "users", catalog = "planner_users")
 @Getter
 @Setter
 @AllArgsConstructor

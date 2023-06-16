@@ -1,5 +1,6 @@
 package com.projects.planner.entity;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -36,6 +37,7 @@ public class Category {
 //    @JoinColumn(name = "user_id", referencedColumnName = "id")
 //    private User user;
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Column(name = "user_id")
     private Long userId;
 
