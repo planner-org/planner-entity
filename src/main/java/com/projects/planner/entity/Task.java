@@ -1,6 +1,5 @@
 package com.projects.planner.entity;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -30,7 +29,7 @@ public class Task {
 
     @Column(name = "completed")
     @Type(type = "org.hibernate.type.NumericBooleanType")
-    private Boolean isCompleted;
+    private Boolean completed;
 
     @Column(name = "task_date")
     private Date taskDate;
